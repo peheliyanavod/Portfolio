@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Peheliya Dhanuka Navod</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Peheliya Dhanuka Navod</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/profile-pic.png" alt="Peheliya's profile picture" style="width: 340px; "/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Peheliya Dhanuka Navod</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/peheliya-danuka-9801a9253'";
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/peheliyanavod'"
+          />
+          <img
+            src="./assets/fb.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/peheliya.danuka?mibextid=nW3QTL'";
+          />
+          <img
+            src="./assets/insta.png"
+            alt="My Instergram profile"
+            class="icon"
+            onclick="location.href='https://instagram.com/peheliya_dhanuka?igshid=MzNlNGNkZWQ4Mg=='";
+          />
+        </div>
+      </div>
+    </section>
+    <br><br><br><br><br>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers" >
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><br>• BSc.Hon.Software Engineering (University Of Kelaniya)</p>
+              <p>• G.C.E. Advanced Level (2020)	Index No: 2180558</p>
+              <p>	&nbsp&nbsp&nbsp Chemistry &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp A <br>
+                  &nbsp&nbsp&nbsp Physics &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	B <br>
+                	&nbsp&nbsp&nbsp Combined Maths &nbsp B <br>
+                  •	G.C.E. Ordinary Level (2016)	Index No: 61192376
+                </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I am a punctual & motivated individual who is able to work in a busy environment & produce
+                high standards of work. I am an excellent team worker and able to take instructions from
+                all levels and build up good working relationships with all colleagues. I am flexible,
+                reliable and poses excellent time keeping skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+
+      <div class="skills__container bd-grid">          
+          <div>
+              <h1 class="title">Professional Skills</h1>
+              <p class="skills__text"> Programming Languages: Proficiency in multiple programming languages, including 
+                  Java, and JavaScript, enabling the development of diverse software applications.</p>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-html5 skills__icon'></i>
+                      <span class="skills__name">HTML<span style="color: white;">...........</span></span>
+                  </div>
+                  <div class="skills_bar skills_html" style="width: 95%; border: solid blue; align-items: flex-start;" >
+
+                  </div>
+                  <div>
+                      <span class="skills__percentage">95%</span>
+                  </div>
+              </div>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-css3 skills__icon'></i>
+                      <span class="skills__name">CSS<span style="color: white;">..............</span></span>
+                  </div>
+                  <div class="skills_bar skills_css" style="width: 95%; border: solid blue; align-items: flex-start;">
+                      
+                  </div>
+                  <div>
+                      <span class="skills__percentage">95%</span>
+                  </div>
+              </div>
+              <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-javascript skills__icon' ></i>
+                      <span class="skills__name">JavaScript </span>
+                  </div>
+                  <div class="skills_bar skills_js" style="width: 95%; border: solid blue; align-items: flex-start;">
+                      
+                  </div>
+                  <div>
+                      <span class="skills__percentage">95%</span>
+                  </div>
+              </div>
+              <div class="skills__data">
+                  <div class="skills__names">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbhJREFUSEu11E2IzXEUxvHPmLHyMpLNmCxsbDRoiNUsTJmxUDYWFqyUUpJCzXKSjQ2lrKYmG6VGNrIxskAZWUiKKAuToshbyuugozO6bnfu7947c391u93+/9/5nvM8zz0d2nw62lzffABDuF5qsFXAYhzCuXYBDuIx7rQDsCW7P1AqHs+blegE9mAX1mEF7uLdXLBmAKewFftT+zO4V5qiUUDIcQybMY4rmCgVb0ai05jGebzGMB4uJGAT9mIE17Ac2/GzBGlUoqgTEl1CF54n4PZCAqLWDkxiDIfxLQHb8DbB/zHrTbAeu3ERLzGTN+Nf3I0f+IXfCbqMI3hRSagHGEDk/gm+VEnxIfWPaZ7ms7O4ipuNAuK9ZdiXklQaugpr8CCLRTODOJkT/WOUTA5Dj2Ip+rASSzKqU7iA71iL+7UMLwHiTi8+42MpMa0Cdmb+Y9/EBHF6MrKj1ZJUQ2pNEAvsOG7hEV7lpU5sxPtMSiRo9oRXqysMr+tBP2KxxXmWm3JRjfEjtl8zogENT0LK2Yb+Xil5ECZvyNUQ78fvkCc+0XF8f8KbjOeNRiRqxcs575QmmDfsD6nQUhmRcnlrAAAAAElFTkSuQmCC"/>
+                      <span class="skills__name">&nbsp&nbsp&nbsp&nbsp&nbspJava<span style="color: white;">.............</span></span>
+                  </div>
+                  <div class="skills_bar skills_ux" style="width: 95%; border: solid blue; align-items: flex-start;">
+                      
+                  </div>
+                  <div>
+                      <span class="skills__percentage">95%</span>
+                  </div>
+              </div>
+          </div>
+          
+          <div>              
+              <img src="assets/img/work33.jpg" alt="" class="skills__img">
+          </div>
+      </div>
+
+      <div class="soft-skills">
+        <h1 class="title">Soft Skills</h1>
+
+        <ul>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Problem-solving</li>
+          <li>Time management</li>
+          <li>Critical thinking</li>
+          <li>Adaptability</li>
+        </ul>
+
+      </div>
+    </section>
+
+<br><br><br>
+
+
+
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-end Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end Development</h2>
+            <div class="article-container">
+              
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MY SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proect-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ABC Shoe Store <br>(E-Commerce website)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Friends App<br>(Simple friend add/remove website)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/Friends-App'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="hwpeheliya@gmail.com">hwpeheliya@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/peheliya-danuka-9801a9253">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Peheliya Dhanuka Navod. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
