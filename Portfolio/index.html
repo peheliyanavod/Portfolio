@@ -7,7 +7,6 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js"></script>
   </head>
@@ -96,7 +95,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/about.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -143,57 +142,33 @@
 
       <div class="skills__container bd-grid">          
           <div>
-              <h1 class="title">Professional Skills</h1>
-              <p class="skills__text"> Programming Languages: Proficiency in multiple programming languages, including 
-                  Java, and JavaScript, enabling the development of diverse software applications.</p>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxl-html5 skills__icon'></i>
-                      <span class="skills__name">HTML<span style="color: white;">...........</span></span>
-                  </div>
-                  <div class="skills_bar skills_html" style="width: 95%; border: solid blue; align-items: flex-start;" >
+              <h1 class="title">Technical Skills</h1>
 
-                  </div>
-                  <div>
-                      <span class="skills__percentage">95%</span>
-                  </div>
-              </div>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxl-css3 skills__icon'></i>
-                      <span class="skills__name">CSS<span style="color: white;">..............</span></span>
-                  </div>
-                  <div class="skills_bar skills_css" style="width: 95%; border: solid blue; align-items: flex-start;">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">95%</span>
+              <div class="skills">
+
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="65%" style="max-width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">C</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="70%" style="max-width: 70%;"></div>
                   </div>
               </div>
-              <div class="skills__data">
-                  <div class="skills__names">
-                      <i class='bx bxl-javascript skills__icon' ></i>
-                      <span class="skills__name">JavaScript </span>
-                  </div>
-                  <div class="skills_bar skills_js" style="width: 95%; border: solid blue; align-items: flex-start;">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">95%</span>
-                  </div>
+
+              <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+                </div>
+            </div>
+
               </div>
-              <div class="skills__data">
-                  <div class="skills__names">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbhJREFUSEu11E2IzXEUxvHPmLHyMpLNmCxsbDRoiNUsTJmxUDYWFqyUUpJCzXKSjQ2lrKYmG6VGNrIxskAZWUiKKAuToshbyuugozO6bnfu7947c391u93+/9/5nvM8zz0d2nw62lzffABDuF5qsFXAYhzCuXYBDuIx7rQDsCW7P1AqHs+blegE9mAX1mEF7uLdXLBmAKewFftT+zO4V5qiUUDIcQybMY4rmCgVb0ai05jGebzGMB4uJGAT9mIE17Ac2/GzBGlUoqgTEl1CF54n4PZCAqLWDkxiDIfxLQHb8DbB/zHrTbAeu3ERLzGTN+Nf3I0f+IXfCbqMI3hRSagHGEDk/gm+VEnxIfWPaZ7ms7O4ipuNAuK9ZdiXklQaugpr8CCLRTODOJkT/WOUTA5Dj2Ip+rASSzKqU7iA71iL+7UMLwHiTi8+42MpMa0Cdmb+Y9/EBHF6MrKj1ZJUQ2pNEAvsOG7hEV7lpU5sxPtMSiRo9oRXqysMr+tBP2KxxXmWm3JRjfEjtl8zogENT0LK2Yb+Xil5ECZvyNUQ78fvkCc+0XF8f8KbjOeNRiRqxcs575QmmDfsD6nQUhmRcnlrAAAAAElFTkSuQmCC"/>
-                      <span class="skills__name">&nbsp&nbsp&nbsp&nbsp&nbspJava<span style="color: white;">.............</span></span>
-                  </div>
-                  <div class="skills_bar skills_ux" style="width: 95%; border: solid blue; align-items: flex-start;">
-                      
-                  </div>
-                  <div>
-                      <span class="skills__percentage">95%</span>
-                  </div>
-              </div>
+              
           </div>
           
           <div>              
@@ -347,11 +322,13 @@
         onclick="location.href='#projects'"
       />
     </section>
+    
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -371,10 +348,51 @@
               
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-images/project-2.png"
+                src="./assets/project-images/project-3.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ABC Shoe Store <br>(E-Commerce website)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-images/project-4.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ABC Shoe Store <br>(E-Commerce website)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-images/project-5.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -393,6 +411,7 @@
           
         </div>
       </div>
+      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -400,6 +419,7 @@
         onclick="location.href='#contact'"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
