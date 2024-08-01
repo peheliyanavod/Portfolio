@@ -7,10 +7,15 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
   </head>
   <body>
+    <!-- Navigation Bar -->
+
     <nav id="desktop-nav">
       <div class="logo">Peheliya Dhanuka Navod</div>
       <div>
@@ -23,8 +28,12 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Hamburger Navigation Bar -->
+
     <nav id="hamburger-nav">
       <div class="logo">Peheliya Dhanuka Navod</div>
+
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -37,13 +46,15 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          
         </div>
       </div>
     </nav>
+
+    <!-- Profile Section  -->
+
     <section id="profile">
       <div class="section__pic-container">
-        <img src="assets/profile-pic.png" alt="Peheliya's profile picture"/>
+        <img src="assets/profile-pic.png" alt="Peheliya's profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -65,7 +76,8 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/peheliya-danuka-9801a9253'";
+            onclick="location.href='https://www.linkedin.com/in/peheliya-danuka-9801a9253'"
+            ;
           />
           <img
             src="./assets/github.png"
@@ -77,18 +89,22 @@
             src="./assets/fb.png"
             alt="My Facebook profile"
             class="icon"
-            onclick="location.href='https://www.facebook.com/peheliya.danuka?mibextid=nW3QTL'";
+            onclick="location.href='https://www.facebook.com/peheliya.danuka?mibextid=nW3QTL'"
+            ;
           />
           <img
             src="./assets/insta.png"
             alt="My Instergram profile"
             class="icon"
-            onclick="location.href='https://instagram.com/peheliya_dhanuka?igshid=MzNlNGNkZWQ4Mg=='";
+            onclick="location.href='https://instagram.com/peheliya_dhanuka?igshid=MzNlNGNkZWQ4Mg=='"
+            ;
           />
         </div>
       </div>
     </section>
-    <br><br><br><br><br>
+
+    <!-- About Section -->
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -101,7 +117,7 @@
           />
         </div>
         <div class="about-details-container">
-          <div class="about-containers" >
+          <div class="about-containers">
             <div class="details-container">
               <img
                 src="./assets/education.png"
@@ -109,21 +125,30 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p><br>• BSc.Hon.Software Engineering (University Of Kelaniya)</p>
-              <p>• G.C.E. Advanced Level (2020)	Index No: 2180558</p>
-              <p>	&nbsp&nbsp&nbsp Chemistry &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp A <br>
-                  &nbsp&nbsp&nbsp Physics &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	B <br>
-                	&nbsp&nbsp&nbsp Combined Maths &nbsp B <br>
-                  •	G.C.E. Ordinary Level (2016)	Index No: 61192376
-                </p>
+              <p>
+                <br />• BSc.Hon.Software Engineering (University Of Kelaniya)
+              </p>
+              <p>• G.C.E. Advanced Level (2020) Index No: 2180558</p>
+              <p>
+                &nbsp&nbsp&nbsp Chemistry
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                A <br />
+                &nbsp&nbsp&nbsp Physics
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                B <br />
+                &nbsp&nbsp&nbsp Combined Maths &nbsp B <br />
+                • G.C.E. Ordinary Level (2016) Index No: 61192376
+              </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-                I am a punctual & motivated individual who is able to work in a busy environment & produce
-                high standards of work. I am an excellent team worker and able to take instructions from
-                all levels and build up good working relationships with all colleagues. I am flexible,
-                reliable and poses excellent time keeping skills.
+              I am a punctual & motivated individual who is able to work in a
+              busy environment & produce high standards of work. I am an
+              excellent team worker and able to take instructions from all
+              levels and build up good working relationships with all
+              colleagues. I am flexible, reliable and poses excellent time
+              keeping skills.
             </p>
           </div>
         </div>
@@ -136,66 +161,44 @@
       />
     </section>
 
+    <!-- Skill Section -->
 
-    <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
+    <section id="skills">
+      <div class="skills__container">
+        <div>
+          <h1 class="title">Technical Skills</h1>
 
-      <div class="skills__container bd-grid">          
-          <div>
-              <h1 class="title">Technical Skills</h1>
-
-              <div class="skills">
-
-                <div class="skill">
-                    <div class="skill-name">Java</div>
-                    <div class="skill-bar">
-                      <div class="skill-per" per="65%" style="max-width: 65%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                  <div class="skill-name">C</div>
-                  <div class="skill-bar">
-                    <div class="skill-per" per="70%" style="max-width: 70%;"></div>
-                  </div>
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-name">Java</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="65%" style="max-width: 65%"></div>
               </div>
-
-              <div class="skill">
-                <div class="skill-name">JavaScript</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="70%" style="max-width: 70%;"></div>
-                </div>
             </div>
 
+            <div class="skill">
+              <div class="skill-name">C</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="70%" style="max-width: 70%"></div>
               </div>
-              
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="70%" style="max-width: 70%"></div>
+              </div>
+            </div>
           </div>
-          
-          <div>              
-              <img src="assets/img/work33.jpg" alt="" class="skills__img">
-          </div>
-      </div>
+        </div>
 
-      <div class="soft-skills">
-        <h1 class="title">Soft Skills</h1>
-
-        <ul>
-          <li>Communication</li>
-          <li>Teamwork</li>
-          <li>Problem-solving</li>
-          <li>Time management</li>
-          <li>Critical thinking</li>
-          <li>Adaptability</li>
-        </ul>
-
+        <div>
+          <img src="assets/img/work33.jpg" alt="" class="skills__img" />
+        </div>
       </div>
     </section>
 
-<br><br><br>
-
-
-
-
+    <!-- Experience Section
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -321,23 +324,28 @@
         class="icon arrow"
         onclick="location.href='#projects'"
       />
-    </section>
-    
+    </section> -->
+
+    <!-- Project Section -->
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-images/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ABC Shoe Store <br>(E-Commerce website)</h2>
+      <div class="project-list">
+
+        <div class="project">
+          <div class="image-container">
+            <img
+              src="./assets/project-images/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">PostSnap</h2>
+            <p class="project-description">Social media app.</p>
+            <p class="technologies"><span>Technologies : </span>Nodejs React MongoDB Express</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -345,73 +353,104 @@
               >
                 Github
               </button>
-              
             </div>
           </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-images/project-3.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ABC Shoe Store <br>(E-Commerce website)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-images/project-4.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ABC Shoe Store <br>(E-Commerce website)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-images/project-5.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Friends App<br>(Simple friend add/remove website)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/peheliyanavod/Friends-App'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-          
         </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img
+              src="./assets/project-images/project-2.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Book Management System</h2>
+            <p class="project-description">CRUD application</p>
+            <p class="technologies"><span>Technologies : </span>Nodejs React Mysql Express</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img
+              src="./assets/project-images/project-3.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">PetZone</h2>
+            <p class="project-description">E-Commerce website. Pet essentials</p>
+            <p class="technologies"><span>Technologies : </span>Spring boot React Postgresql Express</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img
+              src="./assets/project-images/project-4.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Shoe Store</h2>
+            <p class="project-description">E-Commerce website. Shoe Store</p>
+            <p class="technologies"><span>Technologies : </span>Php HTML CSS JavaScript</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img
+              src="./assets/project-images/project-5.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Friends App</h2>
+            <p class="project-description">CRUD application</p>
+            <p class="technologies"><span>Technologies : </span>Php HTML CSS JavaScript</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/peheliyanavod/ABC-Shoe-Store'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
-      
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -419,6 +458,8 @@
         onclick="location.href='#contact'"
       />
     </section>
+
+    <!-- Contact Section -->
 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -438,10 +479,17 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/peheliya-danuka-9801a9253">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/peheliya-danuka-9801a9253"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
+
+    <!-- Footer Section -->
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -455,11 +503,7 @@
       </nav>
       <p>Copyright &#169; 2023 Peheliya Dhanuka Navod. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
